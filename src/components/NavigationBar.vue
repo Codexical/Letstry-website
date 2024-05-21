@@ -26,6 +26,7 @@
             </v-list>
         </v-menu>
         <v-btn color="primary" @click="course('contact')">聯絡我們</v-btn>
+        <v-btn color="primary" @click="rollCall()">點名</v-btn>
     </v-app-bar>
 </template>
 
@@ -59,6 +60,9 @@ export default {
                 console.log("summer/" + url);
             }
         },
+        rollCall() {
+            console.log("rollCall");
+        }
     }
 }
 </script>
