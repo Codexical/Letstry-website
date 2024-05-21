@@ -20,7 +20,18 @@
 export default {
     data: () => ({
         items: [
+            { title: '課程介紹', url: 'courseIntro' },
+            { title: 'CBK', url: 'CBK' },
+            { title: 'BOOST', url: 'BOOST' },
+            { title: 'SPM', url: 'SPM' },
+            { title: 'EV3', url: 'EV3' },
+            { title: 'VEX', url: 'VEX' },
         ],
     }),
+    methods: {
+        course(url) {
+            console.log(url);
+        },
+    }
 }
 </script>
