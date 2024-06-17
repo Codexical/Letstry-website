@@ -9,6 +9,14 @@ const routes = [
       title: "LetsTry",
     },
   },
+  {
+    path: "/about",
+    name: "LetsTry",
+    component: () => import("../views/aboutUs.vue"),
+    meta: {
+      title: "關於我們",
+    },
+  },
 ];
 
 const router = createRouter({
