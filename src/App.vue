@@ -4,10 +4,12 @@
     <v-main>
       <router-view />
     </v-main>
+    <BottomBar />
   </v-app>
 </template>
 
 <script>
 import NavigationBar from '@/components/NavigationBar.vue';
-export default { components: { NavigationBar } }
+import BottomBar from '@/components/BottomBar.vue';
+export default { components: { NavigationBar, BottomBar } }
 </script>
