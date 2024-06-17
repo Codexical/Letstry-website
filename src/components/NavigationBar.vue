@@ -1,5 +1,6 @@
 <template>
     <v-app-bar>
+        <v-img src="../assets/logo.png" max-height="50" max-width="50"></v-img>
         <v-toolbar-title>Welcome to LetsTry</v-toolbar-title>
         <v-menu>
             <template v-slot:activator="{ props }">
@@ -25,7 +26,7 @@
                 </v-list-item>
             </v-list>
         </v-menu>
-        <v-btn color="primary" @click="course('contact')">聯絡我們</v-btn>
+        <v-btn color="primary" @click="course('contact', 3)">聯絡我們</v-btn>
         <v-btn color="primary" @click="rollCall()">點名</v-btn>
     </v-app-bar>
 </template>
@@ -54,10 +55,16 @@ export default {
     }),
     methods: {
         course(url, type) {
-            if (type === 1) {
-                console.log("general/" + url);
-            } else {
-                console.log("summer/" + url);
+            switch (type) {
+                case 1:
+                    console.log("general/" + url);
+                    break;
+                case 2:
+                    console.log("summer/" + url);
+                    break;
+                case 3:
+                    this.$router.push("/about");
+                    break;
             }
         },
         rollCall() {
