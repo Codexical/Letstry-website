@@ -1,33 +1,35 @@
 <template>
     <v-app-bar>
-        <v-img src="../assets/logo.png" max-height="50" max-width="50"></v-img>
-        <v-toolbar-title>Welcome to LetsTry</v-toolbar-title>
-        <v-menu>
-            <template v-slot:activator="{ props }">
-                <v-btn color="primary" v-bind="props">
-                    常態課程
-                </v-btn>
-            </template>
-            <v-list>
-                <v-list-item v-for="(item, index) in generalCourse" :key="index" @click="course(item.url, 1)">
-                    <v-list-item-title>{{ item.title }}</v-list-item-title>
-                </v-list-item>
-            </v-list>
-        </v-menu>
-        <v-menu>
-            <template v-slot:activator="{ props }">
-                <v-btn color="primary" v-bind="props">
-                    暑期課程
-                </v-btn>
-            </template>
-            <v-list>
-                <v-list-item v-for="(item, index) in summerCourse" :key="index" @click="course(item.url, 2)">
-                    <v-list-item-title>{{ item.title }}</v-list-item-title>
-                </v-list-item>
-            </v-list>
-        </v-menu>
-        <v-btn color="primary" @click="course('contact', 3)">聯絡我們</v-btn>
-        <v-btn color="primary" @click="rollCall()">點名</v-btn>
+        <v-img src="../assets/logo.png" max-width="100"></v-img>
+        <v-toolbar-title class="font-weight-black text-orange">樂創機器人</v-toolbar-title>
+        <div id="computer">
+            <v-menu>
+                <template v-slot:activator="{ props }">
+                    <v-btn color="primary" v-bind="props">
+                        常態課程
+                    </v-btn>
+                </template>
+                <v-list>
+                    <v-list-item v-for="(item, index) in generalCourse" :key="index" @click="course(item.url, 1)">
+                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                    </v-list-item>
+                </v-list>
+            </v-menu>
+            <v-menu>
+                <template v-slot:activator="{ props }">
+                    <v-btn color="primary" v-bind="props">
+                        暑期課程
+                    </v-btn>
+                </template>
+                <v-list>
+                    <v-list-item v-for="(item, index) in summerCourse" :key="index" @click="course(item.url, 2)">
+                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                    </v-list-item>
+                </v-list>
+            </v-menu>
+            <v-btn color="primary" @click="course('contact', 3)">聯絡我們</v-btn>
+            <v-btn color="primary" @click="rollCall()">點名</v-btn>
+        </div>
     </v-app-bar>
 </template>
 
@@ -73,3 +75,23 @@ export default {
     }
 }
 </script>
+
+<style>
+#computer {
+    display: block;
+}
+
+#mobile {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    #computer {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
+}
+</style>
