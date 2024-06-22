@@ -12,6 +12,15 @@
     <title>LetsTry</title>
   </head>
   <body>
+    <script>
+      (function () {
+        let redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
     <noscript>
       <strong
         >We're sorry but LetsTry doesn't work properly without JavaScript

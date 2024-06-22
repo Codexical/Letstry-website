@@ -30,6 +30,27 @@
             <v-btn color="primary" @click="course('contact', 3)">聯絡我們</v-btn>
             <v-btn color="primary" @click="rollCall()">點名</v-btn>
         </div>
+        <div id="mobile">
+            <v-menu>
+                <template v-slot:activator="{ props }">
+                    <v-btn icon="mdi-dots-vertical" v-bind="props"></v-btn>
+                </template>
+                <v-list>
+                    <v-list-item>
+                        <v-list-item-title>常態課程</v-list-item-title>
+                    </v-list-item>
+                    <v-list-item>
+                        <v-list-item-title>暑期課程</v-list-item-title>
+                    </v-list-item>
+                    <v-list-item @click="course('contact', 3)">
+                        <v-list-item-title>聯絡我們</v-list-item-title>
+                    </v-list-item>
+                    <v-list-item @click="rollCall()">
+                        <v-list-item-title>點名</v-list-item-title>
+                    </v-list-item>
+                </v-list>
+            </v-menu>
+        </div>
     </v-app-bar>
 </template>
 
