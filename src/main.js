@@ -1,10 +1,10 @@
 import { createApp } from "vue";
+import { loadFonts } from "./plugins/webfontloader";
 import App from "./App.vue";
+import axios from "axios";
 import router from "./router";
 // import store from "./store";
 import vuetify from "./plugins/vuetify";
-import { loadFonts } from "./plugins/webfontloader";
-import axios from "axios";
 
 const HOST = process.env.VUE_APP_HOST || "localhost";
 
