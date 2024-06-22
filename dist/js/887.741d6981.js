@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkletstry_frontend"]=self["webpackChunkletstry_frontend"]||[]).push([[887],{1887:function(n,t,e){e.r(t),e.d(t,{default:function(){return d}});var r=e(6768);const u={class:"d-flex justify-center pt-3"},s=(0,r.Lk)("h1",null,"404 Page not found",-1),f=[s];function c(n,t){return(0,r.uX)(),(0,r.CE)("div",u,f)}var l=e(1241);const o={},a=(0,l.A)(o,[["render",c]]);var d=a}}]);
+//# sourceMappingURL=887.741d6981.js.map
