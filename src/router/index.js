@@ -11,10 +11,18 @@ const routes = [
   },
   {
     path: "/about",
-    name: "LetsTry",
+    name: "AboutUs",
     component: () => import("../views/aboutUs.vue"),
     meta: {
       title: "關於我們",
+    },
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: "404",
+    component: () => import("../views/notFound.vue"),
+    meta: {
+      title: "404",
     },
   },
 ];
