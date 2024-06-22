@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkletstry_frontend"]=self["webpackChunkletstry_frontend"]||[]).push([[934],{4934:function(n,t,e){e.r(t),e.d(t,{default:function(){return o}});var r=e(6768);const u={class:"d-flex justify-center pt-3"},s=(0,r.Lk)("h1",null,"樂創機器人",-1),c=[s];function f(n,t){return(0,r.uX)(),(0,r.CE)("div",u,c)}var l=e(1241);const a={},d=(0,l.A)(a,[["render",f]]);var o=d}}]);
-//# sourceMappingURL=934.502f0eff.js.map
