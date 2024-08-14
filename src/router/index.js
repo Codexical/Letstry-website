@@ -18,6 +18,14 @@ const routes = [
     },
   },
   {
+    path: "/teacher",
+    name: "Teacher",
+    component: () => import("../views/aboutTeacher.vue"),
+    meta: {
+      title: "老師介紹",
+    },
+  },
+  {
     path: "/:catchAll(.*)",
     name: "404",
     component: () => import("../views/notFound.vue"),
