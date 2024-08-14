@@ -1,0 +1,49 @@
+{
+    "teacher": [
+        {
+            "name": "A老師",
+            "major": "BOOST, SPM, EV3",
+            "experience": "",
+            "feature": "",
+            "philosophy": "",
+            "expertise": "",
+            "img": "teacher.png"
+        },
+        {
+            "name": "B老師",
+            "major": "CBK",
+            "experience": "",
+            "feature": "",
+            "philosophy": "",
+            "expertise": "",
+            "img": "teacher.png"
+        },
+        {
+            "name": "C老師",
+            "major": "EV3, VEX",
+            "experience": "",
+            "feature": "",
+            "philosophy": "",
+            "expertise": "",
+            "img": "teacher.png"
+        },
+        {
+            "name": "D老師",
+            "major": "SPM",
+            "experience": "",
+            "feature": "",
+            "philosophy": "",
+            "expertise": "",
+            "img": "teacher.png"
+        },
+        {
+            "name": "E老師",
+            "major": "EV3, Minecraft",
+            "experience": "",
+            "feature": "",
+            "philosophy": "",
+            "expertise": "",
+            "img": "teacher.png"
+        }
+    ]
+}
